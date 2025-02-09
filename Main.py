@@ -36,7 +36,7 @@ async def checker(uid):
         else:
             print(df.loc[usr_column, 'UID'], df.loc[usr_column, 'Окончание доступа'])
             print(f'the pass has expired')
-            await Output('forbid')
+            await Output('expired')
     else:
         print(f'wrong uid: {uid}')
         await Output('forbid')
