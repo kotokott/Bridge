@@ -3,7 +3,7 @@ void setup() {
 }
 
 void loop() {
-  Output(); //да, я очень люблю создавать функции для каждого действия:^
+  Output();
 }
 
 void Output() {
