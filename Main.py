@@ -4,9 +4,10 @@ import time
 import asyncio
 import serial
 
+com = input("Введите адрес последовательного порта: ")
 
 #настройка последовательного порта
-ser = serial.Serial('COM8', 9600, timeout = 1)
+ser = serial.Serial(com, 9600, timeout = 1)
 ser.flush()
 
 #чтение таблицы и создание датафрейма
